@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample App to demonstrate IAM Role Mapping in Domino Apps</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Sample App to demonstrate IAM Role Mapping in Domino Apps</h1>
+    <p>
+
+        <ul>
+            <li>A link to list S3 Bucket: <a href="{{ url_for('list_s3') }}">{{ url_for('list_s3') }}</a></li>
+            <li>A link to add a key/value to S3 Bucket: <a href="{{ url_for('add_to_s3') }}">{{ url_for('add_to_s3') }}</a></li>
+            <li>A link to add to Start Job to snapshot a dataset and copy new key from s3 bucket: <a href="{{ url_for('start_job') }}">{{ url_for('start_job') }}</a></li>
+            <li>A link to List Dataset to verify the job did its job: <a href="{{ url_for('list_dataset') }}">{{ url_for('list_dataset') }}</a></li>
+        </ul>
+    
+
+    
+</body>
+
+</html>
